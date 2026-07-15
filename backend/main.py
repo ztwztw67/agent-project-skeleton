@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.config import settings
-from backend.routers import auth
+from backend.routers import auth ,rag
 from backend.middleware.log import LogMiddleware
 
 
@@ -54,7 +54,7 @@ app.include_router(auth.router, prefix="/auth", tags=["认证"])
 
 # 后续添加新模块只需加一行：
 # app.include_router(chat.router, prefix="/chat", tags=["聊天"])
-# app.include_router(rag.router, prefix="/rag", tags=["RAG"])
+app.include_router(rag.router, prefix="/rag", tags=["RAG"])
 
 
 # ===== 基础接口 =====

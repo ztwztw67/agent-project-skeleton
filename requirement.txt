@@ -28,6 +28,9 @@ langchain==0.3.30           # 0.3.x 最新补丁
 langchain-openai==0.3.35    # 0.3.x 最新补丁
 langchain-community==0.3.31 # 0.3.x 最新补丁
 
+# ========== Embedding 模型（本地运行，不调 API） ==========
+sentence-transformers>=3.0.0
+
 # ========== 向量数据库（Project 1 用） ==========
 # ⚠️ Chroma 1.x API 有较大变化，锁在 0.6.x
 chromadb==0.6.3             # 0.6.x 最新版（0.x 最后一个版本）
